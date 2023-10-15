@@ -329,7 +329,7 @@ body {
     margin: 0 auto;
     display: flex;
     width: 30%;
-    height: 400px;
+    height: auto;
     padding: 10px;
     border-radius: 20px;
 
@@ -363,7 +363,7 @@ body {
     margin: 0 auto;
     display: flex;
     width: 45%;
-    height:500px;
+    height:auto;
     padding: 10px;
     border-radius: 20px;
 
