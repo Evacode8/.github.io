@@ -1,0 +1,642 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.header{
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+width: 100%;
+height: 90px;
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: 0;
+  padding: 0;
+background-size: 400% 400%;
+position: relative;
+}
+
+.nav-bar {
+position: absolute;
+background-color: rgba(0, 0, 0, 0.977);
+top: 0;
+right: 100%;
+height: 100vh;
+width: 100%;
+  z-index: 2;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: position 2.9s;
+-webkit-transition: position 2.9s;
+-moz-transition: position 2.9s;
+-ms-transition: position 2.9s;
+-o-transition: position 2.9s;
+}
+
+.toggle {
+left: 0;
+box-shadow: 1px 0 15px 2px rgba(0, 0, 0, 0.4);
+
+}
+
+.toggle-menu {
+
+position: fixed;
+top: 20px;
+right: 20px;
+width: 40px;
+height: 30px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+  padding: 2px 2px 2px 3px;
+border-radius: 5px;
+cursor: pointer;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-ms-border-radius: 5px;
+-o-border-radius: 5px;
+}
+
+.line {
+width: 100%;
+height: 3px;
+border-radius: 5px;
+background-color: #fff;
+transition: transform 0.2s ease-out;
+-webkit-transition: transform 0.2s ease-out;
+-moz-transition: transform 0.2s ease-out;
+-ms-transition: transform 0.2s ease-out;
+-o-transition: transform 0.2s ease-out;
+}
+
+.toggle .line1 {
+background-color: #000000;
+transform: scale(0.9) rotateZ(-45deg) translate(-6px, 4px);
+}
+
+.toggle .line2 {
+display: none;
+}
+
+.toggle .line3 {
+background-color: #000000;
+transform: scale(0.9) rotateZ(45deg) translate(-6px, -4px);
+}
+
+.toggle .toggle-menu {
+background-color: white;
+}
+
+.nav-list {
+list-style: none;
+justify-content: center;
+}
+
+.nav-list-item {
+text-align: center;
+padding: 0px 0;
+justify-content:center;
+display: flex;
+position: relative;
+}
+
+.nav-link {
+color: #fff;
+font-size: 28px;
+text-decoration: none;
+position: relative;
+padding-bottom: 5px;
+line-height: 2rem;
+font-family: 'Lexend Deca', sans-serif;
+  
+}
+
+.nav-link:hover {
+transform: scale(-3px);
+color: rgb(238, 151, 45, 0.93);
+font-size: 30px;
+text-decoration: none;
+position: relative;
+padding-bottom: 4px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+
+.nav-link::before {
+position: absolute;
+content: '';
+left: 0;
+bottom: 0;
+width: 100%;
+height: 1px;
+background-color: #fff;
+transform: scaleX(0);
+transition: transform 1s ease-in-out;
+transform-origin: left;
+-webkit-transition: transform 0.4s ease-in-out;
+-moz-transition: transform 0.4s ease-in-out;
+-ms-transition: transform 0.4s ease-in-out;
+-o-transition: transform 0.4s ease-in-out;
+}
+
+.nav-link:hover::before {
+transform: scaleX(1);
+}
+
+
+.nav-bar{
+  display: none;
+}
+
+@media screen and (max-width:900px) {
+  .nav-bar{
+      display: block;
+  } 
+  .Menu .navlinks{
+      display: none;
+      
+  }
+ 
+}
+
+
+.Menu{
+  height: 60px;
+  width: 100vw;
+  flex-direction: row;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  text-align: center;
+  top: 0;
+  padding: 0px;
+  margin: 0;
+ 
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: linear-gradient(90deg, rgb(11, 11, 11),  rgb(42, 43, 44));
+  /* color: #000000; */
+}
+.navlinks li a{
+
+  font-family: 'NIGHTMARE PILLS', sans-serif;
+                                              
+}
+
+.navlinks ul{
+  display: flex;
+  flex-direction: row;
+  text-align:end;
+  list-style-type: none;
+  position: relative;
+
+}
+a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  padding: 40px;
+  /* position: relative; */
+  transition: ease-in;
+  transition: 0.5s;
+}
+span{
+  display: inline-block;
+}
+
+a:hover{
+  transform: scale(-3px);
+  color: rgb(11, 89, 224);
+  font-size: 28px;
+}
+
+
+
+body{
+  background-color:#080c14;
+height:2000px;
+
+
+}
+
+
+
+
+ h1 {
+  font-family: 'Happy Farmhouse', sans-serif;
+  font-weight: 90px;
+  font-size: 70pt;
+  color: #fff;
+  padding: 50px;
+ text-align: center;
+ 
+}
+
+.cours_container {
+ 
+  margin: 30px auto;
+  text-align: center;
+  height: 500px;
+}
+.cours_container h2{
+  font-family: 'Happy Farmhouse', sans-serif;
+  font-weight: 90px;
+  font-size: 70pt;
+  padding: 20px;
+  color: #fff;
+ 
+}
+.course-cards {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+ 
+}
+.course{
+  height:150px;
+  margin: 0;
+}
+
+/* .course-cards :hover{
+   
+  transform: scale(1.1);
+  transition: ease-in;
+  transition: cubic-bezier(0.23, 1, 0.320, 1);
+} */
+.batterie{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+}
+.batterie .course-cards {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  width: 95%;
+  
+ 
+}
+
+/* Styles pour le champ de texte des objectifs */
+textarea {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: #000000;
+  font-family: 'NIGHTMARE PILLS', sans-serif;
+  font-size: 13pt;
+  text-align: left;
+}
+
+ .input{ 
+  color: #000000;
+  font-family: 'NIGHTMARE PILLS', sans-serif;
+  font-size: 13pt;
+  text-align:left;
+}
+.instrument-dropdown, .level-dropdown, .signup-button {
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15pt;
+  margin: 10px;
+  font-family: 'NIGHTMARE PILLS', sans-serif;
+  color: #080c14;
+ 
+}
+.signup-button:hover{
+  color: #00f;
+  box-shadow: 0px 5px 10px rgba(2, 38, 122, 0.964);
+}
+.signup-button:hover::before{
+  transform: translate(0%);
+}
+
+.instrument-dropdown option{
+  font-size: 12pt;
+  margin: 0px;
+  font-family:'Happy Farmhouse', sans-serif;
+  color: #000000;
+  text-align: center;
+
+}
+.level-dropdown option{
+  font-size: 12pt;
+  margin: 0px;
+  font-family:'Happy Farmhouse', sans-serif;
+  color: #000000;
+}
+
+#signup-form {
+  text-align: center;
+  background-color: #fff;
+  border: 2px solid #060606;
+  padding: 30px;
+  margin: 20px;
+  height: fit-content;
+  width: 30%;
+  margin: 0 auto;
+  /* display:block; */
+  border-radius: 10px;
+  box-shadow: 1px 0 5px rgba(1, 3, 147, 0.873);
+}
+
+#signup-form h2 {
+  color: #000000;
+  font-size: 20pt;
+  margin: 20px 0;
+  letter-spacing: 2px;
+  font-family: 'Happy Farmhouse', sans-serif;
+}
+
+#signup-form input {
+  width: 50%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #656464;
+  border-radius: 5px;
+}
+
+#signup-form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+#signup-form input[type="submit"]:hover {
+  background-color:rgb(1, 1, 211);
+ 
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+/* Votre style CSS existant reste inchangé */
+
+/* Styles pour les cartes de cours */
+.card {
+  background-color:rgb(1, 1, 211);
+  color: #fff;
+  border: 1px solid #2980b9;
+  padding: 30px;
+  margin: 0 auto;
+  height: fit-content;
+  justify-content: center;
+  width: 21%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(4, 10, 165, 0.842);
+}
+@media screen and (max-width: 778px) {
+  .course-cards {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+   
+  }
+
+  .card {
+    background-color:rgb(1, 1, 211);
+    color: #fff;
+    border: 1px solid #2980b9;
+    padding: 30px;
+    margin: 0 auto;
+    height: fit-content;
+    justify-content: center;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(4, 10, 165, 0.842);
+  }
+}
+.card h2 {
+  font-size: 25pt;
+  margin: 10px 0;
+  text-align: center;
+  font-family: 'NIGHTMARE PILLS', sans-serif;
+}
+
+.card p {
+  font-size: 20pt;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 10px 0;
+  text-align: center;
+  font-family:'Happy Farmhouse', sans-serif;
+}
+
+
+
+.details{
+  background: rgb(254, 255, 254);
+  height: fit-content;
+  text-align: center;
+  display: block;
+  width: 70%;
+  color: #171717;
+  font-family: 'NIGHTMARE PILLS', sans-serif;
+  transition: all 0.1s ease-in;
+  font-size: 13pt;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px auto;
+  height: fit-content;
+}
+
+.details:hover{
+  background: rgba(207, 211, 214, 0.944);
+}
+
+
+    
+    .copyright{
+      color: #fff;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      height: 60px;
+      width: 100vw;
+      background-color: rgb(18, 18, 18);
+    }
+    .copyright p{
+      color: #fff;
+      justify-content: center;
+      align-items: center;
+      font-size:20pt;
+      font-weight: bold;
+      font-family: 'Happy Farmhouse', sans-serif;
+      letter-spacing: 2px;
+  
+      
+     
+    }
+  
+  
+  
+  
+    .footer-container {
+      background-color: rgb(18, 18, 18);
+      margin-bottom: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
+    }
+    
+    .newsletter {
+      width: 100vw;
+      padding: 2rem;
+      /* background-color: rgb(18, 18, 18); */
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+    .newsletter p{
+      font-family: 'NIGHTMARE PILLS', sans-serif;
+      color: white;
+      font-size: 15pt;
+    }
+    .newsletter ::placeholder{
+      color: #000000;
+      font-family: 'NIGHTMARE PILLS', sans-serif;
+      font-size: 13pt;
+      text-align: center;
+  
+    }
+    .newsletter div {
+      background-color: rgb(182, 226, 245);
+      padding: 0 10px;
+      border-radius: 35px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .newsletter div input {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      padding: 1rem;
+      
+    }
+    
+    .newsletter div i {
+      cursor: pointer;
+      background-color: #0081FE;
+      border-radius: 50%;
+      font-size: 20px;
+      padding: 10px;
+      color: rgb(255, 255, 255);
+    }
+    
+    .social-links {
+      display: flex;
+      align-items: center;
+    }
+    
+    .social-links .link {
+      padding: 2rem 10px;
+    }
+    
+    .social-links .link a {
+      color: #ffffff;
+      font-size: 40px;
+    }
+    
+    .social-links .link a:hover {
+      color: #00f;
+    }
+    
+    .copyright {
+      padding: 0 0 2rem;
+      font-size: 10px;
+    }
+    
+    
+    @media screen and (max-width: 600px) {
+      .header-container {
+      }
+      .navbar,
+      .user-options {
+        display: none;
+      }
+      .menu {
+        display: block;
+      }
+    }
+    
+    @media screen and (max-width: 400px) {
+      .newsletter {
+        flex-direction: column;
+      }
+      .newsletter span:before {
+        content: 'Join Our ';
+      }
+    }
+    
+    @media screen and (min-width: 1300px) {
+      .header-container {
+        margin: 0 6rem;
+      }
+    }
