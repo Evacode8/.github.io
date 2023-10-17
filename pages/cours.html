@@ -99,8 +99,48 @@ toggleButton.addEventListener('click', function () {
 
 
 <body>
+
+
+
+
+
+    <div class="cours_container">
+        <h2>Choisissez votre cours :</h2>
+        <div class="course">
+            <select class="instrument-dropdown">
+                <option value="guitar">Guitare</option>
+                <option value="bass">Basse</option>
+                <option value="drums">Batterie</option>
+            </select>
+
+            <select class="level-dropdown">
+                <option value="beginner">Débutant</option>
+                <option value="intermediate">Intermédiaire</option>
+                <option value="advanced">Avancé</option>
+            </select>
+
+            <button class="signup-button">S'inscrire</button>
+        </div>
+
+        <div id="signup-form" class="hidden">
+            <h2>Inscription aux cours</h2>
+            <form action="cours.php" method="post" id="registration-form">
+                <input type="hidden" id="selected-course" name="selected-course" value="">
+                <input type="text" id="fullname" name="fullname" placeholder="Nom complet" required>
+                <input type="text" id="firstname" name="firstname" placeholder="Prénom complet" required>
+                <!-- <input type="email" id="email" name="email" placeholder="Adresse e-mail" required> -->
+                <input type="email" id="email" name="email" placeholder="Adresse e-mail" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,}">
+                <!-- <input type="number" name="Numéro" required placeholder="Votre Numéro" required pattern="[0-9]{10}"> -->
+                <input type="tel" id="phone" name="phone" placeholder="Numéro de téléphone" required oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                <input type="Text" name="ville" required placeholder="Votre ville"></label>
+                <!-- Ajout d'un champ de texte pour les objectifs -->
+                <textarea id="objectives" name="objectives" placeholder="Expliquez vos objectifs..." rows="5"></textarea>
+
+                <input type="submit" value="S'inscrire">
+            </form>
+        </div>
     
-        <h1>Cours de Musique</h1>
+        <h1>Détails des cours</h1>
     
         <!-- Cartes de cours -->
         <div class="course-cards">
@@ -109,9 +149,11 @@ toggleButton.addEventListener('click', function () {
                 <h2>Guitare - Débutant</h2>
                 <p>Prix : 15 € / Durée : 30 minutes</p>
                 <div class="details"> Techinique du médiator</div>
-                    <div class="details"> Positionnement du pouce</div>
-                    <div class="details"> Rythmique </div>
-                    <div class="details"> Tablature</div>
+                <div class="details"> Positionnement du pouce</div>
+                <div class="details"> Rythmique </div>
+                <div class="details"> Tablature</div>
+
+                  
             </div>
 
             <!-- Guitare - Intermédiaire -->
@@ -140,7 +182,7 @@ toggleButton.addEventListener('click', function () {
             <div class="card bass beginner">
                 <h2>Basse - Débutant</h2>
                 <p>Prix : 15 € / Durée : 30 minutes</p>
-                <div class="details"> Conseil matériel</div>
+                <div class="details"> Conseil sur le matériel</div>
                 <div class="details"> Posture (pouce) et Médiator</div>
                 <div class="details"> MG: Bend, Hammer, pull-off </div>
                 <div class="details"> MD: Slap, jeu aux doigts </div>
@@ -202,41 +244,7 @@ toggleButton.addEventListener('click', function () {
     </div>
 
     
-    <div class="cours_container">
-        <h2>Choisissez votre cours :</h2>
-        <div class="course">
-            <select class="instrument-dropdown">
-                <option value="guitar">Guitare</option>
-                <option value="bass">Basse</option>
-                <option value="drums">Batterie</option>
-            </select>
-
-            <select class="level-dropdown">
-                <option value="beginner">Débutant</option>
-                <option value="intermediate">Intermédiaire</option>
-                <option value="advanced">Avancé</option>
-            </select>
-
-            <button class="signup-button">S'inscrire</button>
-        </div>
-
-        <div id="signup-form" class="hidden">
-            <h2>Inscription aux cours</h2>
-            <form id="registration-form">
-                <input type="hidden" id="selected-course" name="selected-course" value="">
-                <input type="text" id="fullname" name="fullname" placeholder="Nom complet" required>
-                <!-- <input type="email" id="email" name="email" placeholder="Adresse e-mail" required> -->
-                <input type="email" id="email" name="email" placeholder="Adresse e-mail" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,}">
-
-                <!-- <input type="number" name="Numéro" required placeholder="Votre Numéro" required pattern="[0-9]{10}"> -->
-                <input type="tel" id="phone" name="phone" placeholder="Numéro de téléphone" required oninput="this.value = this.value.replace(/[^0-9]/g, '')">
-                <input type="Text" name="Ville" required placeholder="Votre ville"></label>
-                <!-- Ajout d'un champ de texte pour les objectifs -->
-                <textarea id="objectives" name="objectives" placeholder="Expliquez vos objectifs..." rows="5"></textarea>
-
-                <input type="submit" value="S'inscrire">
-            </form>
-        </div>
+    
 
 </body>
 </html>
