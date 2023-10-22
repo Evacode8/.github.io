@@ -62,15 +62,6 @@ div {
     padding: 0;
 }
 
-.container {
-	width: 100vw;
-	height: 90px;
-	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    margin: 0;
-    padding: 0;
-	background-size: 400% 400%;
-	position: relative;
-}
 
 .nav-bar {
 	position: absolute;
@@ -274,7 +265,7 @@ background-color: white;
 body {
   height: 3000px;
   background-color:#080c14;
-  margin: 0;
+  margin-right: 0;
    
   }
 
