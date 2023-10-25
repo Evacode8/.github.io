@@ -35,43 +35,6 @@
 <link href="https://fontawesome.com License"> 
 </head>
 
-<!-- <header>
-   
-    <div class="container">
-        <div class="Menu">
-            <div class="navlinks">
-                <ul>
-                    <li><a href="../pages/Accueil.html" title="Accueil"> Accueil</a></li>
-                    <li><a href="../pages/apropos.html" title="A propos"> A propos</a></li>
-                    <li><a href="../pages/cours.html" title="Cours"> Cours</a></li>
-                    <li><a href="../pages/galerie.html" title="Galerie"> Galerie</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <nav class="header__nav nav-bar">
-                <div class="toggle-menu">
-                    <div class="line line1"></div>
-                    <div class="line line2"></div>
-                    <div class="line line3"></div>
-                </div>
-                <ul class="nav-list">
-                    <li class="nav-list-item"><a href="" class="nav-link"> Accueil</a></li>
-                    <li class="nav-list-item"><a href="" class="nav-link">A propos</a></li>
-                    <li class="nav-list-item">
-                        <a href="" class="nav-link">Galerie</a>
-                    </li>
-                    <li class="nav-list-item"><a href="" class="nav-link">Cours</a></li>
-                    <li class="nav-list-item">
-                        <a href="" class="nav-link">Contacts</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-         
-    </div>
-</header> -->
-
 <head>
 
    
@@ -87,39 +50,6 @@
     
 </head>
 
-<!-- <header>
-    <header>
-      
-            <div class="Menu">
-                <div class="navlinks">
-            
-                    <ul>
-                        <li><a href="../pages/Accueil.html" title="Accueil"> Accueil</a></li>
-                        <li><a href="../pages/apropos.html" title="A propos"> A propos</a></li>
-                        <li><a href="../pages/cours.html" title="Cours"> Cours</a></li>
-                        <li><a href="../pages/galerie.html" title="Galerie"> Galerie</a></li>
-                    </ul>
-                </div>
-            </div>
-            <nav class="header__nav nav-bar">
-                    <div class="toggle-menu">
-                        <div class="line line1"></div>
-                        <div class="line line2"></div>
-                        <div class="line line3"></div>
-                    </div>
-                    <ul class="nav-list">
-                        <li class="nav-list-item"><a href="../pages/Accueil.html" class="nav-link"> Accueil</a></li>
-                        <li class="nav-list-item"><a href="../pages/apropos.html" class="nav-link">A propos</a></li>
-                        <li class="nav-list-item"><a href="../pages/galerie.html" class="nav-link">Galerie</a> </li>
-                        <li class="nav-list-item"><a href="../pages/cours.html"   class="nav-link">Cours</a></li>
-                        <li class="nav-list-item">
-                            <a href="" class="nav-link">Contacts</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-     
-    </header> -->
 <script>
 
 var toggleButton = document.querySelector('.toggle-menu');
@@ -130,22 +60,41 @@ toggleButton.addEventListener('click', function () {
 </script>
 
 <body>
+
+   
     <div class="Accueil">
-        <div class="Apropos">
-            <h1> Blue Fox Sounds</h1>
-         
-                <p>
-                    BFS a été crée dans le but de transmettre ma passion au travers mes cours de guitare.
-                    <br>
-                    Vous allez pouvoir également y découvrir mes compositions, mes impros et  mes enregistrements.
-                    <br>
-                    <br>
-                    <br>
-                    Bonne visite !
-                </p> 
-        
+        <div class="fixed-header">
+            <h1>Blue Fox Sounds</h1>
+        </div>
+        <div class="parallax-container">
+            <div class="image-1"></div>
+            <div class="image-2"></div>
         </div>
     </div>
+    
+        
+<script>
+    AOS.init();
+    </script>
+<script src="../assets/js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+        <!--          
+                        <p>
+                            BFS a été crée dans le but de transmettre ma passion au travers mes cours de guitare.
+                            <br>
+                            Vous allez pouvoir également y découvrir mes compositions, mes impros et  mes enregistrements.
+                            <br>
+                            <br>
+                            <br>
+                            Bonne visite !
+                        </p>  -->
+
+
+
+
+<section>
+
 
 <div class="SVG">
     <div class="Options" data-aos="flip-left" data-aos-duration="1200">
@@ -179,9 +128,8 @@ toggleButton.addEventListener('click', function () {
 </div>
 
 <div class="main">
-        <h2> Cours </h2>
-  
     <div class="card" data-aos="fade-right" data-aos-delay="100" data-aos-duration="600" >
+        <h2> Cours </h2>
       
             <p>
                 Je propose des cours de guitare, basse et batterie <br> 
@@ -226,11 +174,13 @@ toggleButton.addEventListener('click', function () {
     
 </div>
 
+
+</section>
 <!-- footer area -->
 <footer class="footer-container">
-    <div class="newsletter">
+    <!-- <div class="newsletter">
       <p>Contact</p><div class="email"><input type="email" placeholder="Your email"><i class="fa fa-paper-plane"></i></div>
-    </div>
+    </div> -->
     <div class="social-links">
       <div class="link"><a href="#"><i class="fab fa-facebook"></i></a></div>
       <div class="link"><a href="#"><i class="fab fa-instagram"></i></a></div>
@@ -240,6 +190,7 @@ toggleButton.addEventListener('click', function () {
       <p>&copy;BlueFoxSounds 2023. Tous droits réservés. Créer par Blue Fox Sounds.Code</p>
     </div>
   </footer>
+
 
     <script>
         AOS.init();
