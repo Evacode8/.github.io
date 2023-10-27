@@ -52,9 +52,9 @@ table {
 
    nav{
    
-    height: 70px;
+    height: 100px;
     background-attachment: fixed;
-    background: linear-gradient(90deg, rgb(11, 11, 11),  rgb(42, 43, 44));
+    background: rgb(29, 28, 28);
     position: fixed;
     align-items: center;
     display: flex;
@@ -97,7 +97,7 @@ h1{
   font-family: 'Roboto', sans-serif;
   font-size: 60px;
   text-align: center;
-  padding: 20px;
+  
 }
 h2{ 
   color: white;
@@ -117,46 +117,15 @@ h2{
 nav img{
   width: 40px;
   display: none;
-  margin-left: 18px;
-  background-image: linear-gradient(980deg, #c9d9fb, #c5c5cc, #212121, #1a1a1aee);
+  margin-left: 30px;
+  background-image: linear-gradient(90deg, #59dcfd, #324ff3cc);
   padding: 7px;
   border-radius: 10px;
 }
-/* @media screen and (max-width: 0px){
-  
-  ol li a{
-      color: white;
-      font-family: 'Roboto', sans-serif;
-      font-size: 12pt;
-      text-align: center;
-      text-decoration: none;
-      padding: 16px;
-     
-  }
-
-  nav img{
-      
-      display: inline;
-  }
-  nav ol{
-      display: none;
-  }
-  nav:hover ol {
-      display: flex;
-      flex-direction: column;
-      
-  }
-  nav:hover{
-      height: 100vh;
-  }
-  nav:hover img{
-     display: none;
-  }
-} */
 
 
 body{
-  height: 6000px;
+  height: 5000px;
   background-color:#000000;
   margin: 0 auto;
   display: flex;
@@ -254,6 +223,7 @@ h1{
 h1{
     font-size: 150pt;
     color: white;
+    padding: 0;
     
 }
 
@@ -272,8 +242,9 @@ h1{
  
   /* section intro a propos  */
   .intro{
-    height: 500px;
+    height: fit-content;
     width: 90%;
+    margin: 300px auto;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -290,7 +261,7 @@ h1{
       align-items: center;
       padding: 20px;
       font-weight:bold;
-      font-size: 14pt;
+      font-size: 20pt;
       line-height: 2em;
       font-weight: 200;
       width: 80%;
@@ -321,13 +292,11 @@ h1{
   .SVG{
     width: 90%;
     border-radius: 20px;
-    height: 600px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     border: 2px solid rgba(34, 81, 184, 0.829);
-    margin: 0 auto;
-    margin: auto;
     z-index: -1;
 
   }
@@ -335,7 +304,7 @@ h1{
   .logos{
   
     width: 90%;
-    margin: 100px auto;
+    margin: 200px auto;
     flex-direction: row;
     display: flex;
     align-items:center;
@@ -346,7 +315,7 @@ h1{
 
   .logos img{
     border-radius: 50%;
-    width: 30%;
+    width: 40%;
     padding: 30px;
     margin:30px;
     height: 70px;
@@ -401,25 +370,27 @@ h1{
  /* section cours  */
  .main{
   display: flex;
-  margin: 0 auto;
+  margin: 300px auto;
   width: 90%;
   padding: 0;
-  height: 600px;
+  height: fit-content;
   flex-direction: column;
+  border-radius: 20px;
+ 
   
 
 }
 
 .card{
   justify-content: center;
-  /* background-color: #000000; */
-  border: 2px solid rgba(34, 81, 184, 0.829);
-  height: 700px;
+  height: fit-content;
   width: 100%;
   display: flex;
   flex-direction: column;
   border-radius: 20px;
   margin: 0px auto;
+  border: 2px solid rgba(34, 81, 184, 0.829);
+  border-radius: 20px;
 
   
   
@@ -438,9 +409,9 @@ h1{
   color: rgb(255, 255, 255);
   font-family: 'Roboto Mono', monospace;
   text-align: center;
-  font-size: 17pt;
+  font-size: 20pt;
   /* line-height: 2em; */
-  padding: 80px;
+  padding: 40px;
   font-weight: 200;
   /* margin: 15%; */
   justify-content: center;
@@ -518,8 +489,8 @@ h1{
     height: 1100px;
     width: 90%;
     padding: 0;
+    margin-bottom: 300px;
     border-radius: 20px;
-    margin:auto;
     border: 2px solid rgba(34, 81, 184, 0.829);
     position: relative;
     justify-content:flex-start;
@@ -716,7 +687,7 @@ img :hover{
   
  
   
-  @media screen and (min-width: 340px) and (max-width: 1500px) {
+  @media screen and (min-width: 340px) and (max-width: 1400px) {
     /* Styles pour la plage de 551px à 750px */
   
   
@@ -740,8 +711,8 @@ img :hover{
       }
       nav:hover{
           height: 100vh;
-          background-color: #00000031;
-          backdrop-filter: blur(5px);
+          background-color: #1616164f;
+          backdrop-filter: blur(9px);
       }
       nav:hover img{
          display: block;
@@ -755,9 +726,10 @@ img :hover{
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 90%;
-      height: 10000px;
+      width: 100vw;
+      height: 12000px;
       z-index: 2;
+      margin: 0;
     }
     
    
@@ -767,10 +739,10 @@ img :hover{
       width: 90%;
       border-radius: 20px;
       display: flex;
-      margin: 400px  auto;
+      margin: 0px  auto;
       flex-direction: column;
       justify-content:first baseline;
-      border: 2px solid rgba(34, 81, 184, 0.829);
+      border: 3px solid rgba(34, 81, 184, 0.829);
     }
     
     .intro p{
@@ -780,9 +752,9 @@ img :hover{
         margin: 0 auto;
         display: flex;
         align-items: center;
-        padding: 22px;
+        padding: 25px;
         font-weight:bold;
-        font-size: 22pt;
+        font-size: 27pt;
         /* line-height: 2em; */
         font-weight: 200;
         width: 90%;
@@ -790,7 +762,7 @@ img :hover{
     }
     
     .intro h2{
-      font-size: 70pt;
+      font-size: 80pt;
       padding:30px;
       margin-right: 0;
       top: 0;
@@ -805,41 +777,26 @@ img :hover{
       display: none;
     }
    
-      .body{
-       
-        margin: 0;
-        padding: 0%;
-        height: 20000px;
-        
-      }
+ 
     /* Accueil BFS  */
-    /* .Accueil{
+    .Accueil{
   
       top: 0px;
-      display: flex;
+      display: block;
       margin: 0px auto;
       width: 100%;
-      border-radius: 20px;
       align-items: center;
       justify-content: center;
       
      
-  } */
-
-  .fixed-header h1{
-    
-    justify-content: center;
-    text-align: center;
-    
   }
+
   
   
   h1{
-      font-size: 150pt;
+      font-size: 140pt;
       color: rgb(255, 255, 255);
-      padding: 40px;
-   
-      
+    
   }
  
   
@@ -848,12 +805,13 @@ img :hover{
   
   .SVG{
     width: 90%;
-    height: 2200px;
+    height: 2300px;
     display: flex;
     border-radius: 20px;
     flex-direction: column;
-    border: 2px solid rgba(34, 81, 184, 0.829);
-    margin: 300px auto;
+    border: 3px solid rgba(34, 81, 184, 0.829);
+    /* margin: 300px auto; */
+    margin-top: 300px;
     justify-content: first baseline;
   
   }
@@ -869,15 +827,15 @@ img :hover{
   
   
   .logos img:hover{
-    background:linear-gradient(90deg,rgba(46, 80, 252, 0.93), rgb(13, 4, 147));
+    background:linear-gradient(90deg,rgba(238, 151, 45, 0.93), rgb(16, 62, 187));
   }
   .logos img{
     border-radius: 50%;
     width: 30%;
     padding: 50px;
-    margin:40px;
-    height: 60px;
-    background:linear-gradient(90deg,rgb(238, 151, 45, 0.93), rgb(250, 180, 67));
+    margin:60px;
+    height: 70px;
+    background:linear-gradient(180deg,rgba(22, 23, 24, 0.904), rgba(50, 195, 252, 0.911));
     align-items: center;
     justify-content: center;
     position: relative;
@@ -905,9 +863,10 @@ img :hover{
     /* position: relative; */
   }
   .services p{
-    font-size: 35pt;
-    font-family: 'Happy Farmhouse', sans-serif;
+    font-size: 20pt;
+    font-family: 'Roboto Mono', monospace;
     font-weight: 200;
+    letter-spacing: 2px;
     color: rgb(255, 255, 255);
     top: 0;
     text-align: center;
@@ -919,28 +878,23 @@ img :hover{
   
   .main{
   display: flex;
-  margin: 0 auto;
-  /* width: 80%; */
   height: 1400px;
   flex-direction: column;
   padding: 0;
-  border: 2px solid rgba(34, 81, 184, 0.829);
-  border-radius: 20px;
-  
+  justify-content: center;
+  width: 90%;
+ 
   }
 
   .card{
   justify-content: center;
   background-color: #000000;
   height: 1400px;
-  width:fit-content;
+  width:auto;
   display: flex;
   flex-direction: column;
+  border: 2px solid rgba(34, 81, 184, 0.829);
   border-radius: 20px;
-  margin: 0px auto;
-  
-  
-  
   }
   .main h2{
   font-family: 'Happy Farmhouse', sans-serif;
@@ -948,7 +902,7 @@ img :hover{
   display: flex;
   font-size: 70pt;
   padding:0px;
-  margin: 30px auto;
+  margin: 50px auto;
   
   }
   
@@ -956,11 +910,12 @@ img :hover{
   color: rgb(255, 255, 255);
   font-family: 'Roboto Mono', monospace;
   text-align: center;
-  font-size: 22pt;
-  line-height: 1.9;
+  font-size: 26pt;
   font-weight: 200;
   /* margin: 20%; */
+  width: fit-content;
   justify-content: center;
+  letter-spacing: 2px;
   
   
   }
@@ -1027,7 +982,6 @@ img :hover{
     height: 2500px;
     width: 90%;
     padding: 0;
-    margin:auto;
     border: 2px solid rgba(34, 81, 184, 0.829);
     border-radius: 20px;
     justify-content:flex-start;
@@ -1038,7 +992,7 @@ img :hover{
   .Galerie h2{
     font-size: 80pt;
     padding:40px;
-    margin: auto;
+    margin:0 auto;
     color: #ffffff;
     font-family: 'Happy Farmhouse', sans-serif;
     /* position: relative; */
@@ -1061,9 +1015,6 @@ img :hover{
     width: 300px;
     height: 300px;
 
-   
-
-   
   
   }
   
@@ -1073,7 +1024,7 @@ img :hover{
     height: 620px;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 0 ;
     padding: 0;
     width: 90%;
     border-radius: 20px;
