@@ -66,6 +66,7 @@ nav{
 
 }
 
+
 ol{
   display: flex;
   flex-direction: row;
@@ -434,35 +435,6 @@ textarea {
   font-size: 10px;
 }
 
-/*     
-    
-    @media screen and (max-width: 600px) {
-      .header-container {
-      }
-      .navbar,
-      .user-options {
-        display: none;
-      }
-      .menu {
-        display: block;
-      }
-    }
-    
-    @media screen and (max-width: 400px) {
-      .newsletter {
-        flex-direction: column;
-      }
-      .newsletter span:before {
-        content: 'Join Our ';
-      }
-    }
-    
-    @media screen and (min-width: 1300px) {
-      .header-container {
-        margin: 0 6rem;
-      }
-    } */
-
 
     @media screen and (min-width: 340px) and (max-width: 1400px) {
       /* Styles pour la plage de 551px à 750px */
@@ -488,7 +460,7 @@ textarea {
         }
         nav:hover{
             height: 100vh;
-            background-color: #1616164f;
+            background-color: #0c0c0ccf;
             backdrop-filter: blur(9px);
         }
         nav:hover img{

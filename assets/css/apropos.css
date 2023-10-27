@@ -69,6 +69,8 @@ nav{
 
 }
 
+
+
 ol{
   display: flex;
   flex-direction: row;
@@ -285,21 +287,21 @@ h1 {
   }
   
   @media screen and (min-width: 340px) and (max-width: 1400px) {
-    /* Styles pour la plage de 551px à 750px */
+   
   
   
-      ol li a{
-     display: block;
+    ol li a{
+    display: block;
          
       }
     
       nav img{
           
-          display: flex;
-          position: absolute;
+      display: flex;
+      position: absolute;
       }
       nav ol{
-          display: none;
+      display: none;
       }
       nav:hover ol {
           display: flex;
@@ -307,9 +309,9 @@ h1 {
           
       }
       nav:hover{
-          height: 100vh;
-          background-color: #1616164f;
-          backdrop-filter: blur(9px);
+        height: 100vh;
+        background-color: #0c0c0ccf;
+        backdrop-filter: blur(9px);
       }
       nav:hover img{
          display: block;
@@ -339,28 +341,6 @@ h1 {
         background-color: rgb(18, 18, 18);
       }
   }
-  /* @media screen and (max-width: 600px) {
+
     
-    .navbar,
-    .user-options {
-      display: none;
-    }
-    .menu {
-      display: block;
-    }
-  }
-  
-  @media screen and (max-width: 400px) {
-    .newsletter {
-      flex-direction: column;
-    }
-    .newsletter span:before {
-      content: 'Join Our ';
-    }
-  }
-  
-  @media screen and (min-width: 1300px) {
-    .header-container {
-      margin: 0 6rem;
-    }
-  } */
+    
