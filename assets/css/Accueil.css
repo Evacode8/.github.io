@@ -76,10 +76,12 @@ ol{
 ol li a{
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 20pt;
+    font-weight: 200;
+    letter-spacing: 2px;
     text-align: center;
     text-decoration: none;
-    padding: 20px;
+    padding: 30px;
    
 }
 
@@ -120,7 +122,7 @@ nav img{
   padding: 7px;
   border-radius: 10px;
 }
-@media screen and (max-width: 770px){
+/* @media screen and (max-width: 0px){
   
   ol li a{
       color: white;
@@ -150,7 +152,7 @@ nav img{
   nav:hover img{
      display: none;
   }
-}
+} */
 
 
 body{
@@ -165,17 +167,7 @@ body{
 }
 
 
-section{
-  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 40%;
-  height: 4000px;
-}
-
-
-
+/* section .Accueil */
 
 .image-1,
 .image-2 {
@@ -195,7 +187,7 @@ z-index: -2;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: contain;
-  left: 10%;
+  left: 8%;
   bottom: 2%;
  
 
@@ -258,120 +250,82 @@ h1{
   margin-top: 200px;
 }
 
-.BFS{
-  width: 700px;
-  margin: 0;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-.BFS img{
-    border-radius: 50%;
-    height: 150px;
-    padding: 30px;
-    position: relative;
-    justify-content: center;
-    top: 0;
 
-
-}
 h1{
     font-size: 150pt;
     color: white;
     
 }
-.Apropos p{
-    color: rgb(255, 255, 255);
-    font-family: 'Roboto Mono', monospace;
-    text-align: center;
-    margin: 0;
+
+/* Section body  */
+
+  section{
+  
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 10px;
-    width: 600px;
-    font-weight:bold;
-    font-size: 14pt;
-    line-height: 2em;
-}
-.Apropos a{
-  color: rgb(255, 255, 255);
-  font-family: 'Roboto Mono', monospace;
-  text-align: center;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  width: 90%;
-  font-size: 19pt;
-}
-
-
-.Contenu button{
-    height: 50px;
-    width: 250px;
-    border-radius: 50px;
-    background-color: rgba(255, 250, 250, 0.071);
-    box-shadow: 0px 5px 10px rgba(2, 38, 122, 0.964);
-    position: relative;
-    /* z-index: 1; */
-  
+    width: 45%;
+    height: 5000px;
+    z-index: 2;
   }
-  button{
-    top: 0px;
-    padding: 0;
-    margin: 0;
-    font-size: 23px;
-    color: rgb(255, 255, 255);
+  
+ 
+  /* section intro a propos  */
+  .intro{
+    height: 500px;
+    width: 90%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:first baseline;
+    border: 2px solid rgba(34, 81, 184, 0.829);
+  }
+  
+  .intro p{
+      color: rgb(255, 255, 255);
+      font-family: 'Roboto Mono', monospace;
+      text-align: center;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      font-weight:bold;
+      font-size: 14pt;
+      line-height: 2em;
+      font-weight: 200;
+      width: 80%;
+      letter-spacing: 2px;
+  }
+  
+  .intro h2{
+    font-size: 70pt;
+    padding:30px;
+    margin-right: 0;
+    top: 0;
+    margin: 0 auto;
+    font-weight: 500;
+    color: #ffffff;
     font-family: 'Happy Farmhouse', sans-serif;
-    /* z-index: 2; */
-    transition: 0.3s;
-    overflow: hidden;
+    text-align: center;
   }
-  
-  
-  button:hover{
-    color: rgb(12, 12, 125);
-    width: 250px;
-  }
-  
-  button::before{
-    content:"";
-    position:absolute;
-    height: 50px;
-    width: 250px;
-    border-radius: 50px;
-    background:linear-gradient(90deg,rgb(238, 151, 45, 0.93), rgb(250, 180, 67));
-    top: -2px;
-    left: -2px;
-    transform: translate(-100%);
-    transition: 0.3s;
-    z-index: -1;
-  
-  }
-  /* button:hover::before{
-    transform: translate(0%);
-  }
-  button i{
-    transform: scale(0);
-    margin: -10px;
-    transition: 0.3s;
-  }
-  button:hover i{
-    transform: scale(1);
-    margin-left: 10px;
-  } */
-  
+
+
+
+
+
+
+
+
+
+  /* section services  */
   .SVG{
-    /* width: 90%; */
+    width: 90%;
     border-radius: 20px;
     height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* background-color: rgb(229, 226, 226); */
-    border: 2px solid blue;
+    border: 2px solid rgba(34, 81, 184, 0.829);
     margin: 0 auto;
     margin: auto;
     z-index: -1;
@@ -380,29 +334,30 @@ h1{
 
   .logos{
   
-    width: 70%;
+    width: 90%;
     margin: 100px auto;
     flex-direction: row;
     display: flex;
     align-items:center;
     justify-content: center;
-    /* position: relative; */
+
   }
   
-  
-  .logos img:hover{
-    background-image:linear-gradient(90deg,rgba(46, 80, 252, 0.93), rgb(13, 4, 147));
-  }
+
   .logos img{
     border-radius: 50%;
-    width: 20%;
+    width: 30%;
     padding: 30px;
     margin:30px;
     height: 70px;
-    background:linear-gradient(90deg,rgba(204, 204, 206, 0.93), rgb(0, 60, 255));
+    border-radius: 50%;
+    border-radius: 50%;
+    border-radius: 150px;
+    background: linear-gradient(145deg, #2a38f7, #07b8b8fb);
     align-items: center;
     justify-content: center;
     position: relative;
+
   
   
   }
@@ -428,12 +383,13 @@ h1{
     height: 0;
     display: flex;
     flex-direction: column;
-    /* position: relative; */
+
   }
   .services p{
-    font-size: 14;
+    font-size: 12pt;
     font-family: 'Roboto Mono', monospace;
     font-weight: 200;
+
     color: rgb(255, 255, 255);
     top: 0;
     text-align: center;
@@ -442,144 +398,8 @@ h1{
   }
 
 
-
-.Galerie{
-    display: flex;
-    flex-direction: column;
-    height: 1100px;
-    width: 90%;
-    padding: 0;
-    border-radius: 20px;
-    margin:auto;
-    /* background-image: radial-gradient(circle, #0a37d0, #581286, #4e024a, #2f0820, #000000); */
-    border: 2px solid  #0a37d0;
-    position: relative;
-    justify-content:flex-start;
-    align-items: center;
-  
-}
-
-.Galerie h2{
-    font-size: 70pt;
-    padding:40px;
-    margin: auto;
-    color: #ffffff;
-    font-family: 'Happy Farmhouse', sans-serif;
-    /* position: relative; */
-    text-align: center;
-    
-}
-.Videoyt iframe{
-    border-radius: 20px;
-    align-items: center;
-    position: relative;
-    margin: 0;
-    padding: 0;
-   
-
-}
-
-.Galeriephoto{
-    display: flex;
-    flex-direction: column;
-    height: 420px;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin: 40px;
-    padding: 0;
-    width: 700px;
-    border-radius: 20px;
-
-
-}
-.photos{
-    display: flex;
-    flex-direction: row-reverse;
-    padding: 20px;
-    margin: 0;
-    height: fit-content;
-    justify-content:center;
-    /* width: 100vw; */
-}
-
-.photos img{
-    height: 250px;
-    width: 150px;
-    padding: 20px;
-    border-radius: 20%;
-    margin: 0;
-    transition: 3ms;
-    transform: translateY(100%);
-
-
-}
-img :hover{
-    transform: scale(1);
-   
-
-}
-
-
-
-.Contenu1 button{
-    height: 50px;
-    width: 250px;
-    border-radius: 50px;
-    background-color: rgb(0, 0, 0);
-    box-shadow: 0px 5px 10px rgba(2, 38, 122, 0.964);
-    position: relative;
-    z-index: 1;
-  }
-  button {
-    top: 0px;
-    padding: 0;
-    margin: 0;
-    font-size: 23px;
-    color: rgb(0, 0, 0);
-    font-family: 'Happy Farmhouse', sans-serif;
-    z-index: 2;
-    transition: 0.3s;
-    overflow: hidden;
-
-  }
-  
-  
-  button:hover{
-    color: rgb(255, 255, 255);
-    width: 250px;
-  }
-  
-  button::before{
-    content:"";
-    position:absolute;
-    height: 50px;
-    width: 250px;
-    border-radius: 50px;
-    background:linear-gradient(90deg,rgb(238, 151, 45, 0.93), rgb(250, 180, 67));
-    top: -2px;
-    left: -2px;
-    transform: translate(-100%);
-    transition: 0.3s;
-    z-index: -1;
-  
-  }
-  button:hover::before{
-    transform: translate(0%);
-  }
-  button i{
-    transform: scale(0);
-    margin: -10px;
-    transition: 0.3s;
-  }
-  button:hover i{
-    transform: scale(1);
-    margin-left: 10px;
-  }
- 
-  
-  
-  .main{
+ /* section cours  */
+ .main{
   display: flex;
   margin: 0 auto;
   width: 90%;
@@ -593,7 +413,7 @@ img :hover{
 .card{
   justify-content: center;
   /* background-color: #000000; */
-  border: 1px solid blue;
+  border: 2px solid rgba(34, 81, 184, 0.829);
   height: 700px;
   width: 100%;
   display: flex;
@@ -624,6 +444,7 @@ img :hover{
   font-weight: 200;
   /* margin: 15%; */
   justify-content: center;
+  letter-spacing: 2px;
   
   
 }
@@ -685,7 +506,142 @@ img :hover{
   
   
 
+
+
+
+
+
+/* section galerie  */
+.Galerie{
+    display: flex;
+    flex-direction: column;
+    height: 1100px;
+    width: 90%;
+    padding: 0;
+    border-radius: 20px;
+    margin:auto;
+    border: 2px solid rgba(34, 81, 184, 0.829);
+    position: relative;
+    justify-content:flex-start;
+    align-items: center;
   
+}
+
+.Galerie h2{
+    font-size: 70pt;
+    padding:40px;
+    margin: auto;
+    color: #ffffff;
+    font-family: 'Happy Farmhouse', sans-serif;
+    text-align: center;
+}
+
+.Videoyt iframe{
+    border-radius: 20px;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.Galeriephoto{
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 40px;
+    padding: 0;
+    width: 700px;
+    border-radius: 20px;
+}
+
+.photos{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px;
+    margin: 0;
+    height: fit-content;
+    justify-content:center;
+    /* width: 100vw; */
+}
+
+.photos img{
+    height: 250px;
+    width: 150px;
+    padding: 20px;
+    border-radius: 20%;
+    margin: 0;
+    transition: 3ms;
+    transform: translateY(100%);
+
+
+}
+img :hover{
+    transform: scale(1);
+}
+
+.Contenu1 button{
+    height: 50px;
+    width: 250px;
+    border-radius: 50px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 5px 10px rgba(2, 38, 122, 0.964);
+    position: relative;
+    z-index: 1;
+
+  }
+  button {
+    top: 0px;
+    padding: 0px;
+    margin: 0;
+    font-size: 12pt;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto Mono', monospace;
+    z-index: 2;
+    transition: 0.3s;
+    overflow: hidden;
+
+  }
+  
+  button:hover{
+    color: rgb(255, 255, 255);
+    width: 250px;
+  }
+  
+  button::before{
+    content:"";
+    position:absolute;
+    height: 50px;
+    width: 250px;
+    border-radius: 50px;
+    background:linear-gradient(90deg,rgb(238, 151, 45, 0.93), rgb(250, 180, 67));
+    top: -2px;
+    left: -2px;
+    transform: translate(-100%);
+    transition: 0.3s;
+    z-index: -1;
+  
+  }
+ 
+  button:hover::before{
+    transform: translate(0%);
+  }
+  button i{
+    transform: scale(0);
+    margin: -10px;
+    transition: 0.3s;
+  }
+  button:hover i{
+    transform: scale(1);
+    margin-left: 10px;
+  }
+ 
+  
+ 
+
+  /* section footer  */
   
   
   .Social{
@@ -698,7 +654,6 @@ img :hover{
     
   }
  
-  
   .copyright{
     color: #fff;
     justify-content: center;
@@ -716,9 +671,9 @@ img :hover{
     justify-content: center;
     align-items: center;
     font-size:14pt;
-    font-weight: bold;
-    font-family: 'Happy Farmhouse', sans-serif;
-  
+    font-weight: 200;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 3px;
     
   }
 
@@ -727,57 +682,13 @@ img :hover{
     background-color: rgb(18, 18, 18);
     margin-bottom: 0 auto;
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     
   }
   
-  .newsletter {
-    width: 100vw;
-    /* background-color: rgb(18, 18, 18); */
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-  }
-  .newsletter p{
-    font-family: 'NIGHTMARE PILLS', sans-serif;
-    color: white;
-    font-size: 15pt;
-  }
-  .newsletter ::placeholder{
-    color: #000000;
-    font-family: 'NIGHTMARE PILLS', sans-serif;
-    font-size: 13pt;
-    text-align: center;
-    
-  }
-  .newsletter div {
-    background-color: rgb(182, 226, 245);
-    padding: 0 10px;
-    border-radius: 35px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .newsletter div input {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    padding: 1rem;
-    
-  }
-  
-  .newsletter div i {
-    cursor: pointer;
-    background-color: #0081FE;
-    border-radius: 50%;
-    font-size: 20px;
-    padding: 10px;
-    color: rgb(255, 255, 255);
-  }
   
   .social-links {
     display: flex;
@@ -786,6 +697,7 @@ img :hover{
   
   .social-links .link {
     padding: 2rem 10px;
+    margin: 20px;
   }
   
   .social-links .link a {
@@ -804,72 +716,145 @@ img :hover{
   
  
   
-
-
-
-    /* Votre CSS commun ici */
-    @media screen and (max-width: 450px) {
-      /* Vos styles CSS pour les tablettes en mode paysage ici */
-    
-    /* Styles pour les téléphones */
-   
-      .body{
-        height: 4000px;
-        margin: 0;
+  @media screen and (min-width: 340px) and (max-width: 1500px) {
+    /* Styles pour la plage de 551px à 750px */
+  
+  
+      ol li a{
+     display: block;
+         
       }
-    /* Accueil BFS  */
-    .Accueil{
-     
-      height: 1200px;
-      top: 0px;
+    
+      nav img{
+          
+          display: flex;
+          position: absolute;
+      }
+      nav ol{
+          display: none;
+      }
+      nav:hover ol {
+          display: flex;
+          flex-direction: column;
+          
+      }
+      nav:hover{
+          height: 100vh;
+          background-color: #00000031;
+          backdrop-filter: blur(5px);
+      }
+      nav:hover img{
+         display: block;
+         position: absolute;
+         left: 0;
+         top: 0;
+      }
+    
+    section{
+  
       display: flex;
-      margin: 0 auto;
-      background-image: radial-gradient(circle, #0a37d0, #0d5381, #02234e, #000000);
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+      height: 10000px;
+      z-index: 2;
+    }
+    
+   
+    /* section intro a propos  */
+    .intro{
+      height: fit-content;
       width: 90%;
       border-radius: 20px;
+      display: flex;
+      margin: 400px  auto;
+      flex-direction: column;
+      justify-content:first baseline;
+      border: 2px solid rgba(34, 81, 184, 0.829);
+    }
+    
+    .intro p{
+        color: rgb(255, 255, 255);
+        font-family: 'Roboto Mono', monospace;
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        padding: 22px;
+        font-weight:bold;
+        font-size: 22pt;
+        /* line-height: 2em; */
+        font-weight: 200;
+        width: 90%;
+        letter-spacing: 2px;
+    }
+    
+    .intro h2{
+      font-size: 70pt;
+      padding:30px;
+      margin-right: 0;
+      top: 0;
+      margin: 0 auto;
+      font-weight: 500;
+      color: #ffffff;
+      font-family: 'Happy Farmhouse', sans-serif;
+      text-align: center;
+    }
+  
+    .parallax-container{
+      display: none;
+    }
+   
+      .body{
+       
+        margin: 0;
+        padding: 0%;
+        height: 20000px;
+        
+      }
+    /* Accueil BFS  */
+    /* .Accueil{
+  
+      top: 0px;
+      display: flex;
+      margin: 0px auto;
+      width: 100%;
+      border-radius: 20px;
+      align-items: center;
+      justify-content: center;
+      
+     
+  } */
+
+  .fixed-header h1{
+    
+    justify-content: center;
+    text-align: center;
+    
   }
   
   
   h1{
-      font-size: 80pt;
-      color: white;
-      padding: 30px;
+      font-size: 150pt;
+      color: rgb(255, 255, 255);
+      padding: 40px;
    
       
   }
-  .Apropos{
-    margin: 0 auto;
-    display:flex;
-    flex-direction: column;
-    padding: 20px;
-    width: 90%;
-    /* justify-content: center; */
-    align-items: center;
-  }
-  .Apropos p{
-      color: rgb(255, 255, 255);
-      font-family: 'Roboto Mono', monospace;
-      text-align:center;
-      font-weight:bold;
-      font-size: 18pt;
-      line-height: 1.8em;
-      width: 80%;
-  }
-  
+ 
   
   
   /* services  */
   
   .SVG{
     width: 90%;
-    height: 1400px;
+    height: 2200px;
     display: flex;
     border-radius: 20px;
     flex-direction: column;
-    /* align-items: center; */
-    background-color: rgb(229, 226, 226);
-    margin: 0 auto;
-    justify-content: center;
+    border: 2px solid rgba(34, 81, 184, 0.829);
+    margin: 300px auto;
+    justify-content: first baseline;
   
   }
   
@@ -877,9 +862,9 @@ img :hover{
   
     flex-direction:column;
     /* display: flex; */
-    margin: 0 auto;
+    margin: 100px auto;
     padding: 0;
-    justify-content: center;
+    justify-content:first baseline;
   }
   
   
@@ -888,10 +873,10 @@ img :hover{
   }
   .logos img{
     border-radius: 50%;
-    width: 20%;
-    padding: 30px;
-    margin:20px;
-    height: 40px;
+    width: 30%;
+    padding: 50px;
+    margin:40px;
+    height: 60px;
     background:linear-gradient(90deg,rgb(238, 151, 45, 0.93), rgb(250, 180, 67));
     align-items: center;
     justify-content: center;
@@ -900,12 +885,12 @@ img :hover{
   
   }
   .SVG h2{
-    font-size: 50pt;
-    padding:20px;
+    font-size: 80pt;
+    padding:50px;
     margin: 0;
     top: 0;
     font-weight: 500;
-    color: #060f1e;
+    color: #ffffff;
     font-family: 'Happy Farmhouse', sans-serif;
     text-align: center;
   }
@@ -920,10 +905,10 @@ img :hover{
     /* position: relative; */
   }
   .services p{
-    font-size: 15pt;
+    font-size: 35pt;
     font-family: 'Happy Farmhouse', sans-serif;
-    font-weight: 700;
-    color: black;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
     top: 0;
     text-align: center;
   
@@ -935,18 +920,20 @@ img :hover{
   .main{
   display: flex;
   margin: 0 auto;
-  width: 90%;
-  height: 1200px;
+  /* width: 80%; */
+  height: 1400px;
   flex-direction: column;
   padding: 0;
+  border: 2px solid rgba(34, 81, 184, 0.829);
+  border-radius: 20px;
   
   }
-  
+
   .card{
   justify-content: center;
   background-color: #000000;
-  height: 900px;
-  width: auto;
+  height: 1400px;
+  width:fit-content;
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -969,9 +956,9 @@ img :hover{
   color: rgb(255, 255, 255);
   font-family: 'Roboto Mono', monospace;
   text-align: center;
-  font-size: 18pt;
+  font-size: 22pt;
   line-height: 1.9;
-  font-weight: bold;
+  font-weight: 200;
   /* margin: 20%; */
   justify-content: center;
   
@@ -1037,11 +1024,11 @@ img :hover{
   .Galerie{
     display: flex;
     flex-direction: column;
-    height: 1600px;
+    height: 2500px;
     width: 90%;
     padding: 0;
     margin:auto;
-    background-image: radial-gradient(circle, #0a37d0, #581286, #4e024a, #2f0820, #000000);
+    border: 2px solid rgba(34, 81, 184, 0.829);
     border-radius: 20px;
     justify-content:flex-start;
     align-items: center;
@@ -1049,7 +1036,7 @@ img :hover{
   }
   
   .Galerie h2{
-    font-size: 70pt;
+    font-size: 80pt;
     padding:40px;
     margin: auto;
     color: #ffffff;
@@ -1060,18 +1047,22 @@ img :hover{
   }
   .Videoyt{
     display: block;
-    margin: 0 auto;
+    margin: 0px auto;
     flex-direction: column;
     justify-content: center;
-    height: 700px;
-    padding: 20px;
+    height: 1050px;
+    padding: 0px;
   }
   .Videoyt iframe{
-    border-radius: 20px;
+    border-radius: 5%;
     align-items: center;
     display: flex;
     margin: 0 auto;
-    width: 95%;
+    width: 300px;
+    height: 300px;
+
+   
+
    
   
   }
@@ -1079,12 +1070,12 @@ img :hover{
   .Galeriephoto{
     display: flex;
     flex-direction: column;
-    height: 420px;
+    height: 620px;
     justify-content: center;
     align-items: center;
-    margin: 40px;
+    margin: 0 auto;
     padding: 0;
-    width: 40%;
+    width: 90%;
     border-radius: 20px;
   
   
@@ -1093,17 +1084,21 @@ img :hover{
     display: flex;
     flex-direction: column;
     padding: 30px;
-    margin: 0;
+    margin: 0 auto;
     height: fit-content;
     justify-content:center;
     /* width: 100vw; */
   }
-  
+  .photos u{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
   .photos img{
-    height: 260px;
-    width: 260px;
+    height: 300px;
+    width: 300px;
     padding: 30px;
-    border-radius: 20%;
+    border-radius: 25%;
     margin: 0;
     transition: 3ms;
     transform: translateY(100%);
@@ -1171,22 +1166,14 @@ img :hover{
     margin-left: 10px;
   }
   
-  
-  
+
   /* footer  */
   
   
-    .newsletter {
-      flex-direction: column;
-    }
-    .newsletter span:before {
-      content: 'Join Our ';
-    }
   
     .header-container {
       margin: 0 6rem;
     }
-  
     
     .copyright{
       color: #fff;
@@ -1197,404 +1184,8 @@ img :hover{
       margin: 0;
       bottom: 0;
       height: 60px;
-      /* width: 100vw; */
       background-color: rgb(18, 18, 18);
     }
-  
-  }
-
-  /* Votre CSS commun ici */
-  @media screen and (max-width: 800px) {
-    /* Vos styles CSS pour les tablettes en mode paysage ici */
-  
-  /* Styles pour les téléphones */
- 
-    .body{
-      height: 5000px;
-      margin: 0;
-    }
-  /* Accueil BFS  */
-  .Accueil{
-   
-    height: 1100px;
-    top: 0px;
-    display: flex;
-    margin: 0 auto;
-    background-image: radial-gradient(circle, #0a37d0, #0d5381, #02234e, #000000);
-    width: 90%;
-    border-radius: 20px;
-}
-
-
-h1{
-    font-size: 85pt;
-    color: white;
-    padding: 30px;
- 
     
-}
-.Apropos{
-  margin: 0 auto;
-  display:flex;
-  flex-direction: column;
-  padding: 20px;
-  width: 95%;
-  /* justify-content: center; */
-  align-items: center;
-}
-.Apropos p{
-    color: rgb(255, 255, 255);
-    font-family: 'Roboto Mono', monospace;
-    text-align:center;
-    font-weight:bold;
-    font-size: 18pt;
-    line-height: 1.8em;
-    width: 80%;
-}
-
-
-
-/* services  */
-
-.SVG{
-  width: 90%;
-  height: 1400px;
-  display: flex;
-  border-radius: 20px;
-  flex-direction: column;
-  /* align-items: center; */
-  background-color: rgb(229, 226, 226);
-  margin: 0 auto;
-  justify-content: center;
-
-}
-
-.logos{
-
-  flex-direction:column;
-  /* display: flex; */
-  margin: 0 auto;
-  padding: 0;
-  justify-content: center;
-}
-
-
-.logos img:hover{
-  background:linear-gradient(90deg,rgba(46, 80, 252, 0.93), rgb(13, 4, 147));
-}
-.logos img{
-  border-radius: 50%;
-  width: 20%;
-  padding: 30px;
-  margin:20px;
-  height: 40px;
-  background:linear-gradient(90deg,rgb(238, 151, 45, 0.93), rgb(250, 180, 67));
-  align-items: center;
-  justify-content: center;
-  position: relative;
-
-
-}
-.SVG h2{
-  font-size: 70pt;
-  padding:20px;
-  margin: 0;
-  top: 0;
-  font-weight: 500;
-  color: #060f1e;
-  font-family: 'Happy Farmhouse', sans-serif;
-  text-align: center;
-}
-.services{
- 
-  margin: 0;
-  height: fit-content;
-  top: 0;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  /* position: relative; */
-}
-.services p{
-  font-size: 30pt;
-  font-family: 'Happy Farmhouse', sans-serif;
-  font-weight: 700;
-  color: black;
-  top: 0;
-  text-align: center;
-
-
-}
-
-/* cours  */
-
-.main{
-display: flex;
-margin: 0 auto;
-width: 90%;
-height: 1200px;
-flex-direction: column;
-padding: 0;
-
-}
-
-.card{
-justify-content: center;
-background-color: #000000;
-height: 900px;
-width: auto;
-display: flex;
-flex-direction: column;
-border-radius: 20px;
-margin: 0px auto;
-
-
-
-}
-.main h2{
-font-family: 'Happy Farmhouse', sans-serif;
-color: white;
-display: flex;
-font-size: 70pt;
-padding:0px;
-margin: 30px auto;
-
-}
-
-.main .card p{
-color: rgb(255, 255, 255);
-font-family: 'Roboto Mono', monospace;
-text-align: center;
-font-size: 18pt;
-line-height: 1.9;
-font-weight: bold;
-/* margin: 20%; */
-justify-content: center;
-
-
-}
-
-.card button {
-height: 50px;
-  width: 250px;
-  border-radius: 50px;
-  background-color: rgb(0, 0, 0);
-  box-shadow: 0px 5px 10px rgba(4, 1, 21, 0.964);
-  position: relative;
-}
-button{
-  top: 0;
-  padding: 0;
-  margin: 0;
-  font-size: 19pt;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  /* font-family: 'NIGHTMARE PILLS', sans-serif; */
-  font-family:'Happy Farmhouse', sans-serif;
-  z-index: 2;
-  transition: 0.3s;
-  overflow: hidden;
-}
-
-
-button:hover{
-  color: rgb(12, 12, 125);
-  width: 250px;
-}
-
-button::before{
-  content:"";
-  position:absolute;
-  height: 50px;
-  width: 250px;
-  border-radius: 50px;
-  background-color: rgb(253, 253, 253);
-  top: -2px;
-  left: -2px;
-  transform: translate(-100%);
-  transition: 0.3s;
-  z-index: -1;
   
-}
-button:hover::before{
-  transform: translate(0%);
-}
-button i{
-  transform: scale(0);
-  margin: -10px;
-  transition: 0.3s;
-}
-button:hover i{
-  transform: scale(1);
-  margin-left: 10px;
-}
-
-/* Galerie  */
-.Galerie{
-  display: flex;
-  flex-direction: column;
-  height: 1600px;
-  width: 90%;
-  padding: 0;
-  margin:auto;
-  background-image: radial-gradient(circle, #0a37d0, #581286, #4e024a, #2f0820, #000000);
-  border-radius: 20px;
-  justify-content:flex-start;
-  align-items: center;
-
-}
-
-.Galerie h2{
-  font-size: 70pt;
-  padding:40px;
-  margin: auto;
-  color: #ffffff;
-  font-family: 'Happy Farmhouse', sans-serif;
-  /* position: relative; */
-  text-align: center;
-  
-}
-.Videoyt{
-  display: block;
-  margin: 0 auto;
-  flex-direction: column;
-  justify-content: center;
-  height: 700px;
-  padding: 20px;
-}
-.Videoyt iframe{
-  border-radius: 20px;
-  align-items: center;
-  display: flex;
-  margin: 0 auto;
-  width: 95%;
- 
-
-}
-
-.Galeriephoto{
-  display: flex;
-  flex-direction: column;
-  height: 420px;
-  justify-content: center;
-  align-items: center;
-  margin: 40px;
-  padding: 0;
-  width: 40%;
-  border-radius: 20px;
-
-
-}
-.photos{
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
-  margin: 0;
-  height: fit-content;
-  justify-content:center;
-  /* width: 100vw; */
-}
-
-.photos img{
-  height: 260px;
-  width: 260px;
-  padding: 30px;
-  border-radius: 20%;
-  margin: 0;
-  transition: 3ms;
-  transform: translateY(100%);
-
-
-}
-img :hover{
-  transform: scale(1);
- 
-
-}
-
-.Contenu1 button{
-  height: 50px;
-  width: 250px;
-  border-radius: 50px;
-  background-color: rgb(0, 0, 0);
-  box-shadow: 0px 5px 10px rgba(2, 38, 122, 0.964);
-  position: relative;
-  z-index: 1;
-}
-button {
-  top: 0px;
-  padding: 0;
-  margin: 0;
-  font-size: 23pt;
-  color: rgb(255, 255, 255);
-  font-family: 'Happy Farmhouse', sans-serif;
-  z-index: 2;
-  transition: 0.3s;
-  overflow: hidden;
-
-}
-
-
-button:hover{
-  color: rgb(255, 255, 255);
-  width: 250px;
-}
-
-button::before{
-  content:"";
-  position:absolute;
-  height: 50px;
-  width: 250px;
-  border-radius: 50px;
-  background:linear-gradient(90deg,rgb(238, 151, 45, 0.93), rgb(250, 180, 67));
-  top: -2px;
-  left: -2px;
-  transform: translate(-100%);
-  transition: 0.3s;
-  z-index: -1;
-
-}
-button:hover::before{
-  transform: translate(0%);
-}
-button i{
-  transform: scale(0);
-  margin: -10px;
-  transition: 0.3s;
-}
-button:hover i{
-  transform: scale(1);
-  margin-left: 10px;
-}
-
-
-
-/* footer  */
-
-
-  .newsletter {
-    flex-direction: column;
-  }
-  .newsletter span:before {
-    content: 'Join Our ';
-  }
-
-  .header-container {
-    margin: 0 6rem;
-  }
-
-  
-  .copyright{
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    bottom: 0;
-    height: 60px;
-    /* width: 100vw; */
-    background-color: rgb(18, 18, 18);
-  }
-
-}
+    }
